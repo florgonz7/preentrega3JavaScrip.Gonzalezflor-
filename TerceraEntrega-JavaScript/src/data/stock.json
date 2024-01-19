@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "nombre": "Cama gato",
+      "desc": "Hasta 12 cuotas sin interés",
+      "precio": 350000,
+      "img": "img/cama gato.png",
+      "cantidad": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Correa Perro",
+      "desc": "Oferta de la semana",
+      "precio": 135000,
+      "img": "img/correa perros.png",
+      "cantidad": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Alimento Excellence Gatos",
+      "desc": "Hasta 12 coutas sin interes",
+      "precio": 25999,
+      "img": "img/Excellence Gatos.png",
+      "cantidad": 1
+    },
+    {
+      "id": 4,
+      "nombre": "Snacks para Perros",
+      "desc": "Hasta 12 cuotas sin interes",
+      "precio": 33000,
+      "img": "img/galletitas perro.png",
+      "cantidad": 1
+    },
+    {
+      "id": 5,
+      "nombre": "Juguetes para Perros",
+      "desc": "Oferta de la semana",
+      "precio": 210000,
+      "img": "img/Juguete perros2.png",
+      "cantidad": 1
+    },
+    {
+      "id": 6,
+      "nombre": "Mordillo para Perros",
+      "desc": "Hasta 12 coutas sin interes",
+      "precio": 310000,
+      "img": "img/Mordillo perro.png",
+      "cantidad": 1
+    },
+    {
+      "id": 7,
+      "nombre": "Alimento Old Prince Perros",
+      "desc": "Oferta de la semana",
+      "precio": 522000,
+      "img": "img/Old Prince Perros.png",
+      "cantidad": 1
+    },
+    {
+      "id": 8,
+      "nombre": "Purina para Gatos",
+      "desc": "Oferta de la semana",
+      "precio": 490000,
+      "img": "img/purina gato.png",
+      "cantidad": 1
+    },
+    {
+      "id": 9,
+      "nombre": "Royal Canin Perros Medium'",
+      "desc": "Promo Mundialista",
+      "precio": 220000,
+      "img": "img/Royal Canin medium Perros.png",
+      "cantidad": 1
+    },
+    {
+      "id": 10,
+      "nombre": "Royal Canin Perros Mini'",
+      "desc": "Promo Mundialista",
+      "precio": 318000,
+      "img": "img/Royal Canin mini Perros.png",
+      "cantidad": 1
+    },
+    {
+      "id": 11,
+      "nombre": "Royal Canin Gatos",
+      "desc": "Hasta 12 coutas sin interes",
+      "precio": 287000,
+      "img": "img/royal gatos.png",
+      "cantidad": 1
+    },
+    {
+      "id": 12,
+      "nombre": "Snack Gatos",
+      "desc": "Oferta de la semana",
+      "precio": 182000,
+      "img": "img/snack gatos.png",
+      "cantidad": 1
+    }
+  ]

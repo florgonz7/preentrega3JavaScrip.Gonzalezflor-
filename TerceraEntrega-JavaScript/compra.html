@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- cdn boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CDN toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- CDN sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <title>Elegi los mejores productos para tu mascota</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg backgruond__stily navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="index.html"><img class="logo__img" src="./img/logo.png" alt=""></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse nav__tittle collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav__hover">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Finalizar Compra</h2>
+                    <form id="procesar-pago" action="#" method="post">
+                        <div class="form-group row">
+                            <p>
+                                <label for="cliente" class="col-12 col-md-2 col-form-label h2">Nombre :</label>
+
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingresa nombre cliente" name="destinatario">
+                            </p>
+                        </div>
+                        <div class="form-group row">
+                            <p>
+                                <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo"
+                                    name="cc_to" required>
+                            </p>
+                        </div>
+
+
+
+                        <table class="table CartGrilla">
+                            <thead>
+                                <tr class="columnas">
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Productos</th>
+                                    <th scope="col">Precio U</th>
+                                </tr>
+                            </thead>
+                            <tbody id="Carrito-contenedor">
+
+                            </tbody>
+                        </table>
+
+
+
+                        <table>
+                </div>
+                <div class="valores">
+                    <div class="valor">
+                        <h3> Productos:</h3>
+                        <h3 id="acc">0</h3>
+                    </div>
+                    <div class="valor">
+                        <h3>Total $</h3>
+                        <h3 id="TotalCart">0</h3>
+                    </div>
+                </div>
+                </table>
+                <div class="procesador">
+                    <div id="loaders">
+                        <img id="cargando" class="gif" src="./img/cargando.gif">
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-md-4 mb-2">
+                        <button class="botona" id="seguir-comprando">Seguir comprando</button>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <button class="botonb" id="procesar-compra">Realizar compra</button>
+                    </div>
+
+                </div>
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        </div>
+        <div class="productoinvisible">
+            <div id="producto-contenedor"></div>
+        </div>
+
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer">
+        <span class="text-muted">© 2024 Flor Gonzalez</span>
+
+    </footer>
+
+
+
+
+
+    </div>
+    <script src="./src/obtenerProductos.js" type="module"></script>
+    <script src="./src/stock.js" type="module"></script>
+    <script src="./src/accionesCarrito.js" type="module"></script>
+    <script src="./src/botonesCarrito.js" type="module"></script>
+    <script src="./src/actualizarCarrito.js" type="module"></script>
+    <script src="./src/storage.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+    <script src="./src/compra.js" type="module"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+
+</html>
